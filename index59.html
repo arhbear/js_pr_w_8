@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Свойства объекта Document</title>
+        <style >
+            body {
+                background-color: #fefbd8;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            document.body.style.backgroundColor = "red";
+            document.bgColor = "darkblue";
+            document.fgColor = "black";
+            document.linkColor = "blue";
+            document.vlinkColor = "violet";
+            document.alinkColor = "purple";
+
+            var bgc = document.body.style.backgroundColor;
+            var bgc1 = document.bgColor.valueOf();
+            var fgc = document.fgColor.valueOf();
+            var lc = document.linkColor.valueOf();
+            var vlc = document.vlinkColor.valueOf();
+            var al = document.alinkColor.valueOf();
+            var url = document.location.valueOf();
+            var ref = document.referrer.valueOf();
+            var t = document.title.valueOf();
+            var lm = document.lastModified.valueOf();
+            document.write("Цвет фона этой страницы <b>"+bgc+"</b>");
+            document.write("<br>Цвет фона этой страницы <b>"+bgc1+"</b>");
+            document.write("<br>Цвет текста этой страницы <b>"+fgc+"</b>");
+            document.write("<br>Цвет ссылок этой страницы <b>"+lc+"</b>");
+            document.write("<br>Цвет активной ссылки этой страницы <b>"+al+"</b>");
+            document.write("<br>Цвет посещенной ссылки этой страницы <b>"+vlc+"</b>");
+            document.write("<br>URL этой страницы <b>"+url+"</b>");
+            document.write("<br>До этого вы были на странице <b>"+ref+"</b>")
+            document.write("<br>Заголовок этой страницы <b>"+t+"</b>");
+            document.write("<br>Последние изменения в этот жокумент вненсены: <b>"+lm+"</b>");
+        </script>
+    </body>
+</html>

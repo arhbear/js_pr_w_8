@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <script>
+            alert(document.body);
+        </script>
+    </head>
+    <body>
+        Привет, мир!<br>
+        Проанализировав поведение "document.body" при вызове его из скрипта в head и непосредственно из body, я пришел к выводу, что в первом случае значение null соответствует состоянию,
+        когда объект body еще не создан, т.к. alert(document.body) отрабатывается раньше, чем блок body.
+    </body>
+</html>
